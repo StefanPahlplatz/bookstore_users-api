@@ -11,6 +11,7 @@ const (
 	queryInsertUser = "INSERT INTO users(first_name, last_name, email, created_on) VALUES(?, ?, ?, ?);"
 	queryGetUser    = "SELECT id, first_name, last_name, email, created_on FROM users WHERE id=?;"
 	queryUpdateUser = "UPDATE users SET first_name=?, last_name=?, email=? WHERE id=?;"
+	queryDeleteUser = "DELETE FROM users WHERE id=?;"
 )
 
 func (user *User) Get() *errors.RestErr {
@@ -40,7 +41,7 @@ func (user *User) Save() *errors.RestErr {
 
 	user.CreatedOn = date_utils.GetNowString()
 
-	// Insert the user
+	// Insert the user.
 	insertResult, saveErr := sqlStatement.Exec(user.FirstName, user.LastName, user.Email, user.CreatedOn)
 	if saveErr != nil {
 		return mysql_utils.ParseError(saveErr)
@@ -67,6 +68,21 @@ func (user *User) Update() *errors.RestErr {
 	_, updateErr := sqlStatement.Exec(user.FirstName, user.LastName, user.Email, user.Id)
 	if updateErr != nil {
 		return mysql_utils.ParseError(updateErr)
+	}
+	return nil
+}
+
+func (user *User) Delete() *errors.RestErr {
+	// Prepare sql statement.
+	sqlStatement, err := users_db.Client.Prepare(queryDeleteUser)
+	if err != nil {
+		return errors.NewInternalServerError(err.Error())
+	}
+	defer sqlStatement.Close()
+
+	// Delete the user.
+	if _, err := sqlStatement.Exec(user.Id); err != nil {
+		return mysql_utils.ParseError(err)
 	}
 	return nil
 }
