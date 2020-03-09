@@ -17,7 +17,6 @@ type PrivateUser struct {
 	Status    string `json:"status"`
 }
 
-
 func (users Users) Marshall(isPublic bool) interface{} {
 	result := make([]interface{}, len(users))
 	for index, user := range users {
