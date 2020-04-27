@@ -4,6 +4,10 @@ github.com/StefanPahlplatz/bookstore_oauth-go v0.0.0-20200423173611-1e65c0f2f145
 github.com/StefanPahlplatz/bookstore_oauth-go v0.0.0-20200423173611-1e65c0f2f145/go.mod h1:BX+23YWjdLZz5llacuFFR8Am6vJ1R0MCR4UBg7w/Xjg=
 github.com/StefanPahlplatz/bookstore_utils-go v0.0.0-20200426090009-84ab0c9181d7 h1:NapOU+A/cY985JW86oBQiJ7cPkMuh6WkkN5ZWlUVYTc=
 github.com/StefanPahlplatz/bookstore_utils-go v0.0.0-20200426090009-84ab0c9181d7/go.mod h1:SfBz4aCzZUBxbrUDxIShKbLhNcOpX0jSNlhpa67gneQ=
+github.com/StefanPahlplatz/bookstore_utils-go v0.0.0-20200427092846-61ac11546a3e h1:mPMNvYh+NSTi7Y2JUl1SWTHL2UfPpMR/LzIlTcwFb70=
+github.com/StefanPahlplatz/bookstore_utils-go v0.0.0-20200427092846-61ac11546a3e/go.mod h1:SfBz4aCzZUBxbrUDxIShKbLhNcOpX0jSNlhpa67gneQ=
+github.com/StefanPahlplatz/bookstore_utils-go v0.0.1 h1:cqm7mTDsFiZpnypRG8Pz2+/yrWZZNFD+SEMb9VAi4H8=
+github.com/StefanPahlplatz/bookstore_utils-go v0.0.1/go.mod h1:8fZaoxcpVF0iXahpCEJ8ksGpV5xwrpuIeLJ30zKzBg0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -66,6 +70,8 @@ go.uber.org/tools v0.0.0-20190618225709-2cfd321de3ee h1:0mgffUl7nfd+FpvXMVz4IDEa
 go.uber.org/tools v0.0.0-20190618225709-2cfd321de3ee/go.mod h1:vJERXedbb3MVM5f9Ejo0C68/HhF8uaILCdgjnY+goOA=
 go.uber.org/zap v1.14.1 h1:nYDKopTbvAPq/NrUVZwT15y2lpROBiLLyoRTbXOYWOo=
 go.uber.org/zap v1.14.1/go.mod h1:Mb2vm2krFEG5DV0W9qcHBYFtp/Wku1cvYaqPsS/WYfc=
+go.uber.org/zap v1.15.0 h1:ZZCA22JRF2gQE5FoNmhmrf7jeJJ2uhqDUNRYKm8dvmM=
+go.uber.org/zap v1.15.0/go.mod h1:Mb2vm2krFEG5DV0W9qcHBYFtp/Wku1cvYaqPsS/WYfc=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190510104115-cbcb75029529/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/lint v0.0.0-20190930215403-16217165b5de h1:5hukYrvBGR8/eNkX5mdUezrA6JiaEZDtJb9Ei+1LlBs=

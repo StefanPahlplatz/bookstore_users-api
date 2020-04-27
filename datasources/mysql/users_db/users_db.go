@@ -3,7 +3,8 @@ package users_db
 import (
 	"database/sql"
 	"fmt"
-	"github.com/StefanPahlplatz/bookstore_users-api/logger"
+	"github.com/StefanPahlplatz/bookstore_utils-go/logger"
+	"github.com/go-sql-driver/mysql"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"os"
@@ -42,5 +43,6 @@ func init() {
 		logger.Error("unable to ping mysql", err)
 		panic(err)
 	}
+	mysql.SetLogger(logger.GetLogger())
 	log.Println("database sucessfully configured")
 }
